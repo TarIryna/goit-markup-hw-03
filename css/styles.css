@@ -6,28 +6,28 @@
     --main-color: #757575;
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
+body,
+a {
+    font-family: 'Roboto', sans-serif;
+}
 p, h2, h3, h1 {
     margin:0;
 }
-body{
-    font-family: 'Roboto', sans-serif;
-}
+
 ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.container-header {
-    padding: 0 15px;
-    margin-left:200px;
-    width: 1200px;
-    }
+
 .container {
     padding: 0 15px;
-    margin-left:200px;
+    margin: 0 auto;
     width: 1200px;
-    margin-bottom: 94px;
             }
+.header .container{
+    display: flex;
+}
 
 .logo1 {
     color: var(--blue-color);
@@ -36,7 +36,6 @@ ul{
     letter-spacing: 0.03em;
     height: 31px;
     font-size: 26px;
-    margin-top: 24px;
 }
 .logo-part2 {
     color: var(--black-logo);
@@ -50,7 +49,6 @@ ul{
     letter-spacing: 0.02em;
     font-size: 14px;
     line-height: 16px;
-
     display: flex;
     margin-left: 93px;
     margin-top: 32px;
@@ -58,20 +56,26 @@ ul{
 }
 .page-nav{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
+.nav li:not(:first-child){
+    margin-left: 50px;
+}
+
 .nav-current{
     color: var(--blue-color);
-    margin-left: 50px;
 }
 .nav-top {
     color: var(--h2h3-color);
-    margin-left: 50px;
 }
 .contact-list{
     display: flex;
     margin-top: 32px;
     margin-bottom: 32px;
+    justify-content: flex-end;
+}
+.contact-list li:last-child{
+    margin-left: 50px;
 }
 .contacts{
     color: var(--main-color);
@@ -80,18 +84,16 @@ ul{
     line-height: 16px;
     letter-spacing: 0.02em;
 }
-.contacts:last-child {
-    margin-left: 50px;
-  }
+
 .contacts:focus,
 .contacts:hover {
     color: var(--blue-color);
 }
-.container2{
+.hero .container{
+    padding: 0 200px 200px 200px;
+}
+.hero{
     background-color: #2F303A;
-    heigt: 600px;
-    width: 1600px;
-    padding-bottom: 200px;
 }
 .title-main{
     color: var(--white-color);
@@ -100,7 +102,6 @@ ul{
     font-size: 44px;
     letter-spacing: 0.06em;
     text-align: center;
-
     padding-top: 200px;
 }
 .title-h3{
@@ -125,7 +126,7 @@ ul{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin-top: 30px;
-    margin-left: 700px;
+    margin-left: 300px;
 }
 .features{
     display: flex;
@@ -187,8 +188,8 @@ ul{
 }
 .footer{
     background-color: #2F303A;
-    width: 1600px;
     height: 250px;
+    width: 1600px;
 }
 .address{
     font-weight: 400;
@@ -234,7 +235,7 @@ ul{
     letter-spacing: 0.06em;
 }
 .work-inf{
-    margin: 20px 24px;
+    padding: 20px 24px;
 }
 .text-portfolio{
     color: var(--main-color);
