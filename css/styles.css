@@ -248,6 +248,7 @@ img{
 .works-box{
     border: 1px solid #EEEEEE;
     width: 370px;
+    border-top: none;
 }
 .text-portfolio{
     color: var(--main-color);
