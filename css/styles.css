@@ -19,15 +19,14 @@ ul{
     margin: 0;
     padding: 0;
 }
-
+img{
+    display: block;
+}
 .container {
     padding: 0 15px;
     margin: 0 auto;
     width: 1200px;
             }
-.header .container{
-    display: flex;
-}
 
 .logo1 {
     color: var(--blue-color);
@@ -51,12 +50,13 @@ ul{
     line-height: 16px;
     display: flex;
     margin-left: 93px;
-    margin-top: 32px;
-    margin-bottom: 32px;
 }
 .page-nav{
     display: flex;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #ECECEC;
 }
 .nav li:not(:first-child){
     margin-left: 50px;
@@ -70,9 +70,8 @@ ul{
 }
 .contact-list{
     display: flex;
-    margin-top: 32px;
-    margin-bottom: 32px;
     justify-content: flex-end;
+    margin-left: auto;
 }
 .contact-list li:last-child{
     margin-left: 50px;
@@ -90,10 +89,11 @@ ul{
     color: var(--blue-color);
 }
 .hero .container{
-    padding: 0 200px 200px 200px;
+    padding: 200px;
 }
 .hero{
     background-color: #2F303A;
+    padding-bottom: 0;
 }
 .title-main{
     color: var(--white-color);
@@ -102,7 +102,7 @@ ul{
     font-size: 44px;
     letter-spacing: 0.06em;
     text-align: center;
-    padding-top: 200px;
+    margin-left: 52px;
 }
 .title-h3{
     color: var(--h2h3-color);
@@ -130,10 +130,13 @@ ul{
 }
 .features{
     display: flex;
-    margin: 94px 0;
+    padding-top: 94px;
 }
 .features li:not(:first-child){
     margin-left: 30px;
+}
+.features-descr{
+    width: 270px;
 }
 .items{
     width: 270px;
@@ -178,6 +181,12 @@ ul{
     margin-top: 30px;
     margin-bottom: 10px;
 }
+.team-member{
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .prof{
     color: var(--main-color);
     font-weight: 400;
@@ -236,6 +245,10 @@ ul{
 .work-inf{
     padding: 20px 24px;
 }
+.works-box{
+    border: 1px solid #EEEEEE;
+    width: 370px;
+}
 .text-portfolio{
     color: var(--main-color);
     font-weight:400;
@@ -266,3 +279,6 @@ ul{
     margin-right: 30px;
     margin-bottom: 30px;
   }
+section{
+    padding-bottom: 94px;
+}
